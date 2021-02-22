@@ -3,6 +3,9 @@ $( window ).on("load", function() {
         $('.header-right').fadeIn('slow');
 });
 
+
+alert();
+
 $(document).ready(function(){
 
 
