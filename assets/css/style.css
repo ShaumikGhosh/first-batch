@@ -315,10 +315,10 @@ strong {
 
 
 .slider-images img {
+    transform: scale(1.3);
     width: 100%;
     min-height: 700px;
     position: absolute;
-    transform: scale(1.3);
 }
 
 /* 
@@ -460,8 +460,15 @@ strong {
 
 .loader {
     background-color: #FFBB38;
-    width: 50%;
+    width: 100%;
     height: 3px;
+    animation-name: slideLoader;
+    animation-duration: 15s;
+}
+
+@keyframes slideLoader {
+    from {width: 0%;}
+    to {width: 100%;}
 }
 /* end csss for slider*/
 
