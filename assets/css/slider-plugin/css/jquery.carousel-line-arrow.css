@@ -1,0 +1,121 @@
+.carouselLineArrow-line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+.carouselLineArrow-line .carouselLineArrow-innerline {
+  height: 100%;
+  width: 0%;
+}
+
+.carouselLineArrow-arrow {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: .3s;
+  transition: .3s;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.carouselLineArrow-arrow:hover {
+  background-color: white;
+}
+
+.carouselLineArrow-arrow.carouselLineArrow-arrow-left {
+  left: -50px;
+}
+
+.carouselLineArrow-arrow.carouselLineArrow-arrow-left:hover .carouselLineArrow-arrow-inner {
+  -webkit-transform: rotate(-360deg);
+          transform: rotate(-360deg);
+}
+
+.carouselLineArrow-arrow.carouselLineArrow-arrow-left .carouselLineArrow-arrow-inner {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.carouselLineArrow-arrow.carouselLineArrow-arrow-left .carouselLineArrow-arrow-inner:before {
+  position: absolute;
+  content: '';
+  background-color: #222;
+  height: 5px;
+  width: 30px;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.carouselLineArrow-arrow.carouselLineArrow-arrow-left .carouselLineArrow-arrow-inner:after {
+  position: absolute;
+  content: '';
+  height: 0px;
+  width: 0px;
+  border: 10px solid transparent;
+  border-right: 10px solid #222;
+  top: 50%;
+  right: 34px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.carouselLineArrow-arrow.carouselLineArrow-arrow-right {
+  right: -50px;
+}
+
+.carouselLineArrow-arrow.carouselLineArrow-arrow-right:hover .carouselLineArrow-arrow-inner {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.carouselLineArrow-arrow.carouselLineArrow-arrow-right .carouselLineArrow-arrow-inner {
+  height: 100%;
+  width: 100%;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.carouselLineArrow-arrow.carouselLineArrow-arrow-right .carouselLineArrow-arrow-inner:before {
+  position: absolute;
+  content: '';
+  background-color: #222;
+  height: 5px;
+  width: 30px;
+  top: 50%;
+  left: 5px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+}
+
+.carouselLineArrow-arrow.carouselLineArrow-arrow-right .carouselLineArrow-arrow-inner:after {
+  position: absolute;
+  content: '';
+  height: 0px;
+  width: 0px;
+  border: 10px solid transparent;
+  border-left: 10px solid #222;
+  top: 50%;
+  left: 34px;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.carousel-wrapper-middle:hover .carouselLineArrow-arrow.carouselLineArrow-arrow-left {
+  left: 20px;
+}
+
+.carousel-wrapper-middle:hover .carouselLineArrow-arrow.carouselLineArrow-arrow-right {
+  right: 20px;
+}
+/*# sourceMappingURL=jquery.carousel-line-arrow.css.map */

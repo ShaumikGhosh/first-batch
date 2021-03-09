@@ -1,518 +1,691 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8"/>
-        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"/>
-        <link rel="stylesheet" href="assets/fontawesome/css/all.css"/>
-        <link rel="stylesheet" href="assets/css/style.css"/>
-        <link href="https://technext.github.io/credit/img/core-img/favicon.ico" rel="icon">
-        <link rel="stylesheet" href="./assets/css/animate.css"/>
-        <title>Web Design Final Round</title>
-    </head>
-    <body>
-        <div class="starter">
-            <img src="assets/images/loader.gif" alt="" width="50">
-        </div>
-        <!-- starting header area -->
-        <div class="header-area">
-            <div class="header">
-                <div class="header-left">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/02_JOOX_logo_black.png" alt=""/>
-                </div>
-                <div class="header-right" style="display: none;">
-                    <ul>
-                        <li>
-                            <i class="fa fa-globe"></i> &nbsp;&nbsp;&nbsp; <span class="address">th Street Avenue, Los Angeles, CA</span>
-                            <span id="arrow-key" class="fa fa-caret-up"></span>
-                            <p id="arrow-key-p">th Street Avenue, Los Angeles, CA</p>
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp; <span class="email">office@yourfirm.com</span>
-                            <span id="arrow-key-2" class="fa fa-caret-up"></span>
-                            <p id="arrow-key-2-p">office@yourfirm.com</p>
-                        </li>
-                    </ul>
-                </div>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://technext.github.io/credit/img/core-img/favicon.ico" rel="icon">
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/slider-plugin/css/jquery.carousel-line-arrow.css" />
+    <link rel="stylesheet" href="./assets/css/slider-plugin/css/style.css" />
+    <title>Web Design Final Round</title>
+    <!-- <style>
+        .carousel-wrapper-middle { height: 400px; }
+    </style> -->
+    <style>
+        .carousel-item {
+            background: #eee;
+        }
+
+        .carousel-item:hover {
+            cursor: grab;
+        }
+
+        .carousel-caption {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            top: 0;
+            bottom: 0;
+        }
+
+        .carousel-caption h2,
+        .carousel-caption p.lead {
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+        }
+
+        .carousel-indicators li {
+            width: 0.75rem;
+            height: 0.75rem;
+            border-radius: 100%;
+            align-self: center;
+            transition: all 0.6s ease-in-out;
+        }
+
+        .carousel-indicators li.active {
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            top: 50%;
+            transform: translateY(-50%);
+            width: 3rem;
+            height: 3rem;
+            border: 2px solid #fff;
+            border-radius: 100%;
+        }
+
+        .carousel-control-prev {
+            left: 10px;
+        }
+
+        .carousel-control-next {
+            right: 10px;
+        }
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background: #000;
+            color: #000;
+        }
+    </style>
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="starter">
+        <img src="assets/images/loader.gif" alt="" width="50">
+    </div>
+    <!-- starting header area -->
+    <div class="header-area">
+        <div class="header">
+            <div class="header-left">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/02_JOOX_logo_black.png" alt="" />
+            </div>
+            <div class="header-right" style="display: none;">
+                <ul>
+                    <li>
+                        <i class="fa fa-globe"></i> &nbsp;&nbsp;&nbsp; <span class="address">th Street Avenue, Los
+                            Angeles, CA</span>
+                        <span id="arrow-key" class="fa fa-caret-up"></span>
+                        <p id="arrow-key-p">th Street Avenue, Los Angeles, CA</p>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope"></i> &nbsp;&nbsp;&nbsp; <span class="email">office@yourfirm.com</span>
+                        <span id="arrow-key-2" class="fa fa-caret-up"></span>
+                        <p id="arrow-key-2-p">office@yourfirm.com</p>
+                    </li>
+                </ul>
             </div>
         </div>
-        <!-- end header area-->
+    </div>
+    <!-- end header area-->
 
-        
-        <!-- star nav area -->
-        <div class="nav-area">
-            <div class="nav">
-                <div class="nav-left">
-                    <nav>
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">About Us</a></li>
-                            <div class="pages-area">
-                                <li id="pages-area"> 
-                                    <a href="">Pages &nbsp;<i class="fa fa-angle-down"></i></a>
-                                    <div class="pages-manu" id="pages-menu">
-                                        <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">About Us</a></li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Post</a></li>
-                                            <li><a href="#">Single Post</a></li>
-                                            <li><a href="#">Contact</a></li>
-                                            <li><a href="#">Elements</a></li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </div>
-                            <li><a href="">Services</a></li>
-                            <li>
-                                <a id="protfolio-drp" href="">Portfolio&nbsp;<i class="fa fa-angle-down"></i></a>
+
+    <!-- star nav area -->
+    <div class="nav-area">
+        <div class="nav">
+            <div class="nav-left">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About Us</a></li>
+                        <div class="pages-area">
+                            <li id="pages-area">
+                                <a href="">Pages &nbsp;<i class="fa fa-angle-down"></i></a>
+                                <div class="pages-manu" id="pages-menu">
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Post</a></li>
+                                        <li><a href="#">Single Post</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                        <li><a href="#">Elements</a></li>
+                                    </ul>
+                                </div>
                             </li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Contact</a></li>
-                        </ul>
-                    </nav>
-                    <div class="contact-arrow"></div>
-                </div>
-                <div class="nav-right">
-                    <strong><img src="assets/images/call2.png" alt="">&nbsp;+88 01684722001</strong>
-                </div>
-            </div>
-        </div>
-        <!-- end nav area -->
-
-        <!-- start nav drop down area -->
-        <div id="portfolio-dropdown" class="portfolio-dropdown">
-            <div class="dropdown">
-                <ul>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                    <li><a href="#">Portfolio-1</a></li>
-                </ul>
-            </div>
-        </div>
-        <!--end nav dropdown area-->
-
-
-
-        <!-- slider image area -->
-        <div class="slider-area">
-            <div class="slider-images">
-                <img src="assets/images/slider/13.jpg" alt="" data-wow-duration="2s" data-wow-delay="0.5s" />
-                <img src="assets/images/slider/14.jpg" data-wow-duration="2s" data-wow-delay="0.5s" alt=""/>
-            </div>
-            <div class="slider-details">
-                <div class="button-left slider-btn">
-                    <i class="fa fa-angle-left"></i>
-                </div>
-                <div class="slider-contents">
-                    <span>2 years interest</span>
-                    <h1>Get your <spna id="apart">Loan</spna> Now</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid dolorem accusamus molestias quasi ea. Deserunt dolore, perferendis debitis fuga aliquid beatae ipsam hic corrupti illo, amet, dicta maiores ex autem.</p>
-                    <button>Discover</button>
-                </div>
-                <div class="button-right slider-btn">
-                    <i class="fa fa-angle-right"></i>
-                </div>
-
-                <div class="slider-bottom-area">
-                    <div class="slide slide-button-1"></div>
-                    <div class="slide slide-button-2"></div>
-                    <div class="slide slide-button-3"></div>
-                    <div class="slide slide-button-4"></div>
-                </div>
-
-                <div class="loader-area">
-                    <div class="loader"></div>
-                </div>
-            </div>
-        </div>
-        <!--- end slider image area -->
-
-        <!-- starting feature area -->
-        <div class="feature-area">
-            <div class="line"></div>
-            <div class="feature structure">
-                <div class="ftr feature-1">
-                    <p>TAKE LOOK AT OUR</p>
-                    <h2>Our Loans</h2>
-                    <h6>In vitae nisi aliquam, scelerisque leo a, volutpat sem. Viva mus rutrum dui fermentum eros hendrerit.</h6>
-                    <br>
-                    <button>DISCOVER</button>
-                </div>
-                <div class="ftr feature-2">
-                    <img src="assets/images/2.jpg" alt="">
-                    <b>We take care of you</b>
-                </div>
-                <div class="ftr feature-3">
-                    <img src="assets/images/3.jpg" alt="">
-                    <b>No documents needed</b>
-                </div>
-                <div class="ftr feature-4">
-                    <img src="assets/images/4.jpg" alt="">
-                    <b>Fast & easy loans</b>
-                </div>
-            </div>
-        </div>
-        <!-- ending feature area -->
-
-        <!--rating area-->
-        <div class="rating-area">
-            <div class="rating">
-                <div class="rtn rating-left"></div>
-                <div class="rtn rating-right">
-                    <div class="rtn-details">
-                        <div class="rtn-line"></div>
-                        <span>BOLD DESING AND BEYOUND</span>
-                        <h2>Helping small businesses like yours</h2>
-                        <p>
-                            Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem. Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit amet sod ales. Maecenas sed magna tempor, efficitur maur is in, sollicitudin augue. Praesent pretium finibus quam.
-                        </p>
-                        <div class="rtn-rating">
-                            <div class="pb-area">
-                                <div class="progress progress-1">
-                                    <div class="progress-radious" progress-data="50">
-                                        50%
-                                    </div>
-                                </div>
-                                <p>Energy</p>
-                            </div>
-                            <div class="pb-area">
-                                <div class="progress progress-2">
-                                    <div class="progress-radious" progress-data="70">   70%
-                                    </div>
-                                </div>
-                                <p>Power</p>
-                            </div>
-                            <div class="pb-area">
-                                <div class="progress progress-3">
-                                    <div class="progress-radious" progress-data="90">   90%
-                                    </div>
-                                </div>
-                                <p> Resource </p>
-                            </div>
                         </div>
-
-                        <button>READ MORE</button>
-                    </div>
-                </div>
-            </div>
-            <div class="rating-bottom">
-                <h3>Are you in need for a load? Get in touch with us.</h3>
-                <button>READ MORE</button>
-            </div>
-        </div>
-        <!--end rating area-->
-
-        <!--starting scroller button-->
-        <div id="scroller-button" onclick="goUp()">
-            <i class="fa fa-angle-up"></i>
-            <span>TOP</span>
-        </div>
-        <!--ending scroler button -->
-
-        <!--starting service area-->
-        <div class="servicehead">
-            <div class="scrol">
-                <!-- <span>aaa</span> -->
-            </div>
-            <p>TAKE LOOK AT OUR</p>
-            <h3>Our services</h3>
-        </div>
-        <div class="sub">
-            <div class="item1 all">
-                <div class="icon">
-                    <div class="sercle">
-                        <i class="fab fa-500px"></i>
-                    </div>
-                </div>
-                <div class="content">
-                    <h2>No additional papers</h2>
-                    <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                </div>
-            </div>
-            <div class="item2 all">
-                <div class="icon">
-                    <div class="sercle">
-                        <i class="fab fa-500px"></i>
-                    </div>
-                </div>
-                <div class="content">
-                    <h2>No additional papers</h2>
-                    <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                </div>
-            </div>
-            <div class="item3 all">
-                <div class="icon">
-                    <div class="sercle">
-                        <i class="fab fa-500px"></i>
-                    </div>
-                </div>
-                <div class="content">
-                    <h2>No additional papers</h2>
-                    <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                </div>
-            </div>
-            <div class="item4 all">
-                <div class="icon">
-                    <div class="sercle">
-                        <i class="fab fa-500px"></i>
-                    </div>
-                </div>
-                <div class="content">
-                    <h2>No additional papers</h2>
-                    <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                </div>
-            </div>
-            <div class="item5 all">
-                <div class="icon">
-                    <div class="sercle">
-                        <i class="fab fa-500px"></i>
-                    </div>
-                </div>
-                <div class="content">
-                    <h2>No additional papers</h2>
-                    <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                </div>
-            </div>
-            <div class="item6 all">
-                <div class="icon">
-                    <div class="sercle">
-                        <i class="fab fa-500px"></i>
-                    </div>
-                </div>
-                <div class="content">
-                    <h2>No additional papers</h2>
-                    <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis egestas sem.</p>
-                </div>
-            </div>
-        </div>
-        
-        <!--end service area-->
-
-
-        <!-- start meet area -->
-        <div class="meet">
-            <div class="meet_item1">
-                <img src="assets/images/7.png" alt="">
-            </div>
-            <div class="meet_item2">
-                <div class="item2_first">
-                    <div class="first_first2"></div>
-                    <h2>Get in touch</h2>
-                </div>
-                <div class="item2_second">
-                    <div class="second1">
-                        <div class="icon"><img src="assets/images/icon/location.png"></div>
-                        <div class="content">
-                            <P>3007 Sarah Drive</P>
-                            <span>Franklin, LA 70538</span>
-                        </div>
-                    </div>
-                    <div class="second2">
-                        <div class="icon"><img src="assets/images/icon/call.png"></div>
-                        <div class="content">
-                            <p>337-413-9538</p>
-                            <span>MON-FRI , 08.AM - 17.PM</span>
-                        </div>
-                    </div>
-                    <div class="second3">
-                        <div class="icon"><img src="assets/images/icon/message2.png"></div>
-                        <div class="content">
-                            <p>contact@yourbusiness.com</p>
-                            <span>WE REPLY IN 24 HRS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="meet_item3">
-                <div class="item3_first">
-                    <div class="first_first2"></div>
-                    <h2>The news</h2>
-                </div>
-                <div class="item3_second">
-                    <div class="tem3_second1 commons">
-                        <div class="img"><img src="assets/images/10.jpg" alt=""></div>
-                        <div class="content">
-                            <div class="button">july 18,2018</div>
-                            <a href="">How to get the best loan online</a>
-                            <div class="calender">
-                                <div class="calender1">
-                                    <i class="fas fa-pencil-alt"></i>
-                                    <p> Jane Smith </p>
-                                </div>
-                                <div class="calender2">
-                                    <i class="fas fa-credit-card"></i>
-                                    <p> April 26</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tem3_second2 commons">
-                        <div class="img"><img src="assets/images/11.jpg" alt=""></div>
-                        <div class="content">
-                            <div class="button">july 18,2018</div>
-                            <a href="">A new way to finance your dream home</a>
-                            <div class="calender">
-                                <div class="calender1">
-                                    <i class="fas fa-pencil-alt"></i>
-                                    <p> Jane Smith </p>
-                                </div>
-                                <div class="calender2">
-                                    <i class="fas fa-credit-card"></i>
-                                    <p> April 26</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tem3_second3 commons">
-                        <div class="img"><img src="assets/images/12.jpg" alt=""></div>
-                        <div class="content">
-                            <div class="button">july 18,2018</div>
-                            <a href="">10 tips to get the best loan for you</a>
-                            <div class="calender">
-                                <div class="calender1">
-                                    <i class="fas fa-pencil-alt"></i>
-                                    <p> Jane Smith </p>
-                                </div>
-                                <div class="calender2">
-                                    <i class="fas fa-credit-card"></i>
-                                    <p> April 26</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- end meet area -->
-
-
-        <!-- News letter area -->
-        <div class="submit-body">
-            <div class="submit-area">
-                <div  class="countener">
-                    <h2>Subscribe to our newsletter</h2>
-                    <div class="add">
-                        <input type="email" value="Your e-mail" class="submit-email" placeholder="Your e-mail"/>
-                        <button class="subscribe">subscribe</button>
-                    </div>
-                    <p>Curabitur elit turpis, maximus quis ullamcorper sed, maximus eu neque.Cras ultrices erat nec auctor blandit</p>
-                </div>
-            </div>
-        </div>
-        <!-- End News letter area -->
-
-        <!-- Footer -->
-        <footer class="body-footer">
-            <div class="footer-area">
-                <div class="footer-countent footer-countent-1">
-                    <h3>About us</h3>
-                    <ul>
-                        <li><a href="#">Homepage</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Services & Offers</a></li>
-                        <li><a href="#">portfolio presentation</a></li>
-                        <li><a href="#">The News</a></li>
+                        <li><a href="">Services</a></li>
+                        <li>
+                            <a id="protfolio-drp" href="">Portfolio&nbsp;<i class="fa fa-angle-down"></i></a>
+                        </li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact</a></li>
                     </ul>
-                </div>
-                <div class="footer-countent footer-countent-2">
-                    <h3>Solution</h3>
-                    <ul>
-                        <li><a href="#">Out Loans</a></li>
-                        <li><a href="#">Trading & Commerce</a></li>
-                        <li><a href="#">Banking & Private Equity</a></li>
-                        <li><a href="#">Industrial & Factory</a></li>
-                        <li><a href="#">Financial Solutions</a></li>
-                    </ul>
-                </div>
-                <div class="footer-countent footer-countent-3">
-                    <h3>our Loans</h3>
-                    <ul>
-                        <li><a href="#">Out Loans</a></li>
-                        <li><a href="#">Trading & Commerce</a></li>
-                        <li><a href="#">Banking & Private Equity</a></li>
-                        <li><a href="#">Industrial & Factory</a></li>
-                        <li><a href="#">Financial Solutions</a></li>
-                    </ul>
-                </div>
-                    <div class="footer-countent footer-countent-4">
-                        <h3> Latest News</h3>
-                        <div class="footer-right">
-                            <img src="assets/images/11.jpg" alt="">
-                            <div class="img-details">
-                                <span>How to geat the best loan?</span>
-                                <a href="#" class="footer-icon-1"><i class="fas fa-pencil-alt"></i>Jane Smith</a>
-                                <a href="#" class="footer-icon-2"><i class="fa fa-calendar"></i>April 26</a>
-                            </div>                       
-                        </div>
+                </nav>
+                <div class="contact-arrow"></div>
+            </div>
+            <div class="nav-right">
+                <strong><img src="assets/images/call2.png" alt="">&nbsp;+88 01684722001</strong>
+            </div>
+        </div>
+    </div>
+    <!-- end nav area -->
 
-                        <div class="footer-right">
-                            <img src="assets/images/11.jpg" alt="">
-                            <div class="img-details">
-                                <span>How to geat the best loan?</span>
-                                <a href="#" class="footer-icon-1"><i class="fas fa-pencil-alt"></i>Jane Smith</a>
-                                <a href="#" class="footer-icon-2"><i class="fa fa-calendar"></i>April 26</a>
-                            </div>
+    <!-- start nav drop down area -->
+    <div id="portfolio-dropdown" class="portfolio-dropdown">
+        <div class="dropdown">
+            <ul>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+                <li><a href="#">Portfolio-1</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--end nav dropdown area-->
+
+
+
+    <!-- slider image area -->
+    <div class="slider-area">
+        <div id="myCarousel" class="carousel slide carousel--fade shadow" data-ride="carousel">
+            <div class="carousel-inner">
+
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+
+                <div class="carousel-item active">
+                    <img class="img-fluid" src="./assets/images/slider/13.jpg" width="1366" height="768"
+                        alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h2 class="display-4 font-weight-bold">SLIDE ONE</h2>
+                            <p class="lead font-weight-bold">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.</p>
+                            <p><a class="btn btn-lg btn-primary rounded-pill shadow" href="#" role="button">Call to
+                                    Action</a></p>
                         </div>
-        
-                        <div class="footer-right">
-                            <img src="assets/images/11.jpg" alt="">
-                            <div class="img-details">
-                                <span>How to geat the best loan?</span>
-                                <a href="#" class="footer-icon-1"><i class="fas fa-pencil-alt"></i>Jane Smith</a>
-                                <a href="#" class="footer-icon-2"><i class="fa fa-calendar"></i>April 26</a>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img class="img-fluid" src="./assets/images/slider/14.jpg" width="1366" height="768"
+                        alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h2 class="display-4 font-weight-bold">SLIDE TWO</h2>
+                            <p class="lead font-weight-bold">Lorem Ipsum is simply dummy text of the printing and
+                                typesetting industry.</p>
+                            <p><a class="btn btn-lg btn-primary rounded-pill shadow" href="#" role="button">Call to
+                                    Action</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="loader"></div>
+    <!--- end slider image area -->
+
+    <!-- starting feature area -->
+    <div class="feature-area">
+        <div class="line"></div>
+        <div class="feature structure">
+            <div class="ftr feature-1">
+                <p>TAKE LOOK AT OUR</p>
+                <h2>Our Loans</h2>
+                <h6>In vitae nisi aliquam, scelerisque leo a, volutpat sem. Viva mus rutrum dui fermentum eros
+                    hendrerit.</h6>
+                <br>
+                <button>DISCOVER</button>
+            </div>
+            <div class="ftr feature-2">
+                <img src="assets/images/2.jpg" alt="">
+                <b>We take care of you</b>
+            </div>
+            <div class="ftr feature-3">
+                <img src="assets/images/3.jpg" alt="">
+                <b>No documents needed</b>
+            </div>
+            <div class="ftr feature-4">
+                <img src="assets/images/4.jpg" alt="">
+                <b>Fast & easy loans</b>
+            </div>
+        </div>
+    </div>
+    <!-- ending feature area -->
+
+    <!--rating area-->
+    <div class="rating-area">
+        <div class="rating">
+            <div class="rtn rating-left"></div>
+            <div class="rtn rating-right">
+                <div class="rtn-details">
+                    <div class="rtn-line"></div>
+                    <span>BOLD DESING AND BEYOUND</span>
+                    <h2>Helping small businesses like yours</h2>
+                    <p>
+                        Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci,
+                        lobortis egestas sem. Duis non volutpat arcu, eu mollis tellus. Sed finibus aliquam neque sit
+                        amet sod ales. Maecenas sed magna tempor, efficitur maur is in, sollicitudin augue. Praesent
+                        pretium finibus quam.
+                    </p>
+                    <div class="rtn-rating">
+                        <div class="pb-area">
+                            <div class="progress progress-1">
+                                <div class="progress-radious" progress-data="50">
+                                    50%
+                                </div>
+                            </div>
+                            <p>Energy</p>
+                        </div>
+                        <div class="pb-area">
+                            <div class="progress progress-2">
+                                <div class="progress-radious" progress-data="70"> 70%
+                                </div>
+                            </div>
+                            <p>Power</p>
+                        </div>
+                        <div class="pb-area">
+                            <div class="progress progress-3">
+                                <div class="progress-radious" progress-data="90"> 90%
+                                </div>
+                            </div>
+                            <p> Resource </p>
+                        </div>
+                    </div>
+
+                    <button>READ MORE</button>
+                </div>
+            </div>
+        </div>
+        <div class="rating-bottom">
+            <h3>Are you in need for a load? Get in touch with us.</h3>
+            <button>READ MORE</button>
+        </div>
+    </div>
+    <!--end rating area-->
+
+    <!--starting scroller button-->
+    <div id="scroller-button" onclick="goUp()">
+        <i class="fa fa-angle-up"></i>
+        <span>TOP</span>
+    </div>
+    <!--ending scroler button -->
+
+    <!--starting service area-->
+    <div class="servicehead">
+        <div class="scrol">
+            <!-- <span>aaa</span> -->
+        </div>
+        <p>TAKE LOOK AT OUR</p>
+        <h3>Our services</h3>
+    </div>
+    <div class="sub">
+        <div class="item1 all">
+            <div class="icon">
+                <div class="sercle">
+                    <i class="fab fa-500px"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h2>No additional papers</h2>
+                <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis
+                    egestas sem.</p>
+            </div>
+        </div>
+        <div class="item2 all">
+            <div class="icon">
+                <div class="sercle">
+                    <i class="fab fa-500px"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h2>No additional papers</h2>
+                <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis
+                    egestas sem.</p>
+            </div>
+        </div>
+        <div class="item3 all">
+            <div class="icon">
+                <div class="sercle">
+                    <i class="fab fa-500px"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h2>No additional papers</h2>
+                <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis
+                    egestas sem.</p>
+            </div>
+        </div>
+        <div class="item4 all">
+            <div class="icon">
+                <div class="sercle">
+                    <i class="fab fa-500px"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h2>No additional papers</h2>
+                <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis
+                    egestas sem.</p>
+            </div>
+        </div>
+        <div class="item5 all">
+            <div class="icon">
+                <div class="sercle">
+                    <i class="fab fa-500px"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h2>No additional papers</h2>
+                <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis
+                    egestas sem.</p>
+            </div>
+        </div>
+        <div class="item6 all">
+            <div class="icon">
+                <div class="sercle">
+                    <i class="fab fa-500px"></i>
+                </div>
+            </div>
+            <div class="content">
+                <h2>No additional papers</h2>
+                <p>Morbi ut dapibus dui. Sed ut iaculis elit, quis varius mauris. Integer ut ultricies orci, lobortis
+                    egestas sem.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--end service area-->
+
+
+    <!-- start meet area -->
+    <div class="meet">
+        <div class="meet_item1">
+            <img src="assets/images/7.png" alt="">
+        </div>
+        <div class="meet_item2">
+            <div class="item2_first">
+                <div class="first_first2"></div>
+                <h2>Get in touch</h2>
+            </div>
+            <div class="item2_second">
+                <div class="second1">
+                    <div class="icon"><img src="assets/images/icon/location.png"></div>
+                    <div class="content">
+                        <P>3007 Sarah Drive</P>
+                        <span>Franklin, LA 70538</span>
+                    </div>
+                </div>
+                <div class="second2">
+                    <div class="icon"><img src="assets/images/icon/call.png"></div>
+                    <div class="content">
+                        <p>337-413-9538</p>
+                        <span>MON-FRI , 08.AM - 17.PM</span>
+                    </div>
+                </div>
+                <div class="second3">
+                    <div class="icon"><img src="assets/images/icon/message2.png"></div>
+                    <div class="content">
+                        <p>contact@yourbusiness.com</p>
+                        <span>WE REPLY IN 24 HRS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="meet_item3">
+            <div class="item3_first">
+                <div class="first_first2"></div>
+                <h2>The news</h2>
+            </div>
+            <div class="item3_second">
+                <div class="tem3_second1 commons">
+                    <div class="img"><img src="assets/images/10.jpg" alt=""></div>
+                    <div class="content">
+                        <div class="button">july 18,2018</div>
+                        <a href="">How to get the best loan online</a>
+                        <div class="calender">
+                            <div class="calender1">
+                                <i class="fas fa-pencil-alt"></i>
+                                <p> Jane Smith </p>
+                            </div>
+                            <div class="calender2">
+                                <i class="fas fa-credit-card"></i>
+                                <p> April 26</p>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="tem3_second2 commons">
+                    <div class="img"><img src="assets/images/11.jpg" alt=""></div>
+                    <div class="content">
+                        <div class="button">july 18,2018</div>
+                        <a href="">A new way to finance your dream home</a>
+                        <div class="calender">
+                            <div class="calender1">
+                                <i class="fas fa-pencil-alt"></i>
+                                <p> Jane Smith </p>
+                            </div>
+                            <div class="calender2">
+                                <i class="fas fa-credit-card"></i>
+                                <p> April 26</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tem3_second3 commons">
+                    <div class="img"><img src="assets/images/12.jpg" alt=""></div>
+                    <div class="content">
+                        <div class="button">july 18,2018</div>
+                        <a href="">10 tips to get the best loan for you</a>
+                        <div class="calender">
+                            <div class="calender1">
+                                <i class="fas fa-pencil-alt"></i>
+                                <p> Jane Smith </p>
+                            </div>
+                            <div class="calender2">
+                                <i class="fas fa-credit-card"></i>
+                                <p> April 26</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+    <!-- end meet area -->
+
+
+    <!-- News letter area -->
+    <div class="submit-body">
+        <div class="submit-area">
+            <div class="countener">
+                <h2>Subscribe to our newsletter</h2>
+                <div class="add">
+                    <input type="email" value="Your e-mail" class="submit-email" placeholder="Your e-mail" />
+                    <button class="subscribe">subscribe</button>
+                </div>
+                <p>Curabitur elit turpis, maximus quis ullamcorper sed, maximus eu neque.Cras ultrices erat nec auctor
+                    blandit</p>
+            </div>
+        </div>
+    </div>
+    <!-- End News letter area -->
+
+    <!-- Footer -->
+    <footer class="body-footer">
+        <div class="footer-area">
+            <div class="footer-countent footer-countent-1">
+                <h3>About us</h3>
+                <ul>
+                    <li><a href="#">Homepage</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services & Offers</a></li>
+                    <li><a href="#">portfolio presentation</a></li>
+                    <li><a href="#">The News</a></li>
+                </ul>
+            </div>
+            <div class="footer-countent footer-countent-2">
+                <h3>Solution</h3>
+                <ul>
+                    <li><a href="#">Out Loans</a></li>
+                    <li><a href="#">Trading & Commerce</a></li>
+                    <li><a href="#">Banking & Private Equity</a></li>
+                    <li><a href="#">Industrial & Factory</a></li>
+                    <li><a href="#">Financial Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-countent footer-countent-3">
+                <h3>our Loans</h3>
+                <ul>
+                    <li><a href="#">Out Loans</a></li>
+                    <li><a href="#">Trading & Commerce</a></li>
+                    <li><a href="#">Banking & Private Equity</a></li>
+                    <li><a href="#">Industrial & Factory</a></li>
+                    <li><a href="#">Financial Solutions</a></li>
+                </ul>
+            </div>
+            <div class="footer-countent footer-countent-4">
+                <h3> Latest News</h3>
+                <div class="footer-right">
+                    <img src="assets/images/11.jpg" alt="">
+                    <div class="img-details">
+                        <span>How to geat the best loan?</span>
+                        <a href="#" class="footer-icon-1"><i class="fas fa-pencil-alt"></i>Jane Smith</a>
+                        <a href="#" class="footer-icon-2"><i class="fa fa-calendar"></i>April 26</a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <img src="assets/images/11.jpg" alt="">
+                    <div class="img-details">
+                        <span>How to geat the best loan?</span>
+                        <a href="#" class="footer-icon-1"><i class="fas fa-pencil-alt"></i>Jane Smith</a>
+                        <a href="#" class="footer-icon-2"><i class="fa fa-calendar"></i>April 26</a>
+                    </div>
+                </div>
+
+                <div class="footer-right">
+                    <img src="assets/images/11.jpg" alt="">
+                    <div class="img-details">
+                        <span>How to geat the best loan?</span>
+                        <a href="#" class="footer-icon-1"><i class="fas fa-pencil-alt"></i>Jane Smith</a>
+                        <a href="#" class="footer-icon-2"><i class="fa fa-calendar"></i>April 26</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- Footer End -->
 
     <!-- Footer Buttom -->
     <div class="footer-bottom-area">
         <div class="footer-bottom structure">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/02_JOOX_logo_black.png"/>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/02_JOOX_logo_black.png" />
             <p>&copy; Copy right 2021 All right reserved | Copy right 2021 All right reserved</p>
         </div>
     </div>
     <!-- Footur Buttom End -->
-        
+
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
     <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script type="text/javascript" src="./assets/js/plugin/js/jquery.carousel-line-arrow.js"></script>
+    <script type="text/javascript" src="./assets/js/plugin/js/main.js"></script>
     <script type="text/javascript">
         new WOW().init();
     </script>
-    </body>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.19/jquery.touchSwipe.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+
+            $(".carousel").carousel({
+                interval: false,
+                pause: true,
+                touch: true
+            });
+
+            $(".carousel .carousel-inner").swipe({
+                swipeLeft: function (event, direction, distance, duration, fingerCount) {
+                    this.parent().carousel("next");
+                },
+                swipeRight: function () {
+                    this.parent().carousel("prev");
+                },
+                threshold: 0,
+                tap: function (event, target) {
+                    window.location = $(this).find(".carousel-item.active a").attr("href");
+                },
+                excludedElements: "label, button, input, select, textarea, .noSwipe"
+            });
+
+            $(".carousel .carousel-control-prev").on("click", function () {
+                $(".carousel").carousel("prev");
+            });
+
+            $(".carousel .carousel-control-next").on("click", function () {
+                $(".carousel").carousel("next");
+            });
+
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+                '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+    <script>
+        try {
+            fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", {
+                method: 'HEAD',
+                mode: 'no-cors'
+            })).then(function (response) {
+                return true;
+            }).catch(function (e) {
+                var carbonScript = document.createElement("script");
+                carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+                carbonScript.id = "_carbonads_js";
+                document.getElementById("carbon-block").appendChild(carbonScript);
+            });
+        } catch (error) {
+            console.log(error);
+        }
+    </script>
+</body>
+
 </html>

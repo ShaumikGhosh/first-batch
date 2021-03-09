@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body .wrapper {
+  max-width: 800px;
+  width: 100%;
+  margin: 150px auto;
+  padding-top: 20px;
+}
+
+body .wrapper .your-slider {
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

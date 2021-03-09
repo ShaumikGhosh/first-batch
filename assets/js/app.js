@@ -119,10 +119,16 @@ $(document).ready(function(){
 		{
 			'transform': 'scale(1)', 
 			'transition': '15s'
-		}
-	);
+	});
 
-	
+	setTimeout(function(){
+		$('img[image-id="1"]').css('z-index', 0);
+		$('img[image-id="2"]').css('z-index', 1);
+
+	}, 15000);
+
+
+	// slider-images img
 
 	
 	// recusrsive function 
