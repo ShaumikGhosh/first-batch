@@ -1,0 +1,32 @@
+@media screen and (min-width: 2560px){
+    .contact-arrow{
+        /* margin-left: 1160px; */
+        border-bottom: 101px solid #FFBB38;
+        display: inline-block;
+    }
+    .nav-right{
+        display: flex;
+        justify-content: center;
+    }
+    .nav-right strong{
+        font-size: 40px;
+    }
+    .nav-right strong img{
+        width: 40px;
+    }
+    .nav-left nav ul{
+        margin-top: -7px;
+    }
+    .nav-left nav ul li{
+        margin-right: 75px;
+    }
+
+    .nav-left nav ul li a {
+        font-size: 30px;
+    }
+
+    .nav-left nav {
+        width: 100%;
+    }
+
+}
